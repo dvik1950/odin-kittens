@@ -1,0 +1,13 @@
+<% @kittens.each do |kitten| %>
+  Name:
+<%= kitten.name %><br>
+  Age:
+<%= kitten.age %><br>
+  Cuteness:
+<%= kitten.cuteness %><br>
+  Softness:
+<%= kitten.softness %><br>
+  <%= link_to "delete", kitten, method: :delete,
+              data: { confirm: "You sure?" } %>
+  <br><br>
+<% end %>

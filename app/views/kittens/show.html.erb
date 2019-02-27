@@ -1,0 +1,11 @@
+Name:
+<%= @kitten.name %><br>
+Age:
+<%= @kitten.age %><br>
+Cuteness:
+<%= @kitten.cuteness %><br>
+Softness:
+<%= @kitten.softness %><br><br>
+
+<%= link_to "delete", @kitten, method: :delete,
+            data: { confirm: "You sure?" } %>

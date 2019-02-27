@@ -1,0 +1,12 @@
+<%= form_for @kitten, url: {action: "create"} do |f| %>
+  Name
+  <%= f.text_field :name %> <br>
+  Age
+  <%= f.text_field :age %> <br>
+  Softness
+  <%= f.text_field :softness %><br>
+  Cuteness
+  <%= f.text_field :cuteness %><br>
+
+  <%= f.submit "Create" %>
+<% end %>
